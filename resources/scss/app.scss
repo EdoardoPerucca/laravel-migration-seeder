@@ -1,1 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
+
+.table {
+    .deleted {
+        text-decoration: line-through;
+    }
+}

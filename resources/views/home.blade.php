@@ -18,14 +18,14 @@
     
         <tbody>
             @foreach ($trains as $singleTrain)     
-            <tr>
+            <tr class="{{$singleTrain->is_deleted ? 'deleted' : ''}}">
                 <th scope="row">{{$singleTrain->id}}</th>
                 <td>{{$singleTrain->company_name}}</td>
                 <td>{{$singleTrain->station_departure}}</td>
                 <td>{{$singleTrain->station_arrival}}</td>
                 <td>{{$singleTrain->time_departure}}</td>
                 <td>{{$singleTrain->time_arrival}}</td>
-                <td>{{$singleTrain->is_time}}</td>
+                <td>{{$singleTrain->is_time ? 'In orario' : 'In ritardo'}}</td>
                 <td>{{$singleTrain->is_deleted}}</td>
             </tr>
         @endforeach
