@@ -20,17 +20,18 @@ class TrainsSeeder extends Seeder
                 'company_name' => 'Trenitalia',
                 'station_departure' => 'Novara',
                 'station_arrival' => 'Milano',
-                'time_departure' => '12:50',
-                'time_arrival' => '14:10',
+                'time_departure' => '2023-05-13',
+                'time_arrival' => '2023-05-13',
                 'is_in_time' => true,
             ],
             [
                 'company_name' => 'Italo',
                 'station_departure' => 'Trieste',
                 'station_arrival' => 'Venezia',
-                'time_departure' => '08:50',
-                'time_arrival' => '10:10',
+                'time_departure' => '2023-05-10',
+                'time_arrival' => '2023-05-11',
                 'is_in_time' => false,
+                'is_deleted' => false,
             ],
 
 

@@ -19,11 +19,11 @@ return new class extends Migration
             $table->string('company_name', 50);
             $table->string('station_departure', 50);
             $table->string('station_arrival', 50);
-            $table->string('time_departure')->nullable();
-            $table->string('time_arrival')->nullable();
+            $table->datetime('time_departure')->nullable();
+            $table->datetime('time_arrival')->nullable();
             $table->tinyInteger('train_code')->nullable();
             $table->string('number_train_carriages')->nullable();
-            $table->boolean('is_in_time')->true;
+            $table->boolean('is_in_time')->nullable();
             $table->boolean('is_deleted')->nullable();
 
             $table->timestamps();
